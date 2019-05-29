@@ -1,0 +1,55 @@
+/**
+ * yellow theme for reveal.js
+ * Author: hdrpknc http://github.com/hdrpknc
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+// Title Font:
+@import url(https://fonts.googleapis.com/css?family=Viga&display=swap);
+// Content Font:
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+// Cursive Font:
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes&display=swap);
+
+// Colors used in the theme
+$yellow: #f9dc24;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: $yellow;
+$mainFont: "Open Sans", sans-serif;
+$mainColor: black;
+$headingFont: "Viga", "sans-serif";
+$headingColor: black;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// some overrides after theme template import
+
+.reveal em {
+  //font-style: italic; changing italic with Great Vibes
+  font-family: "Great Vibes", "cursive";
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  //font-style: italic; changing italic with Great Vibes
+  font-family: "Great Vibes", "cursive";
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal q {
+  //font-style: italic; changing italic with Great Vibes
+  font-family: "Great Vibes", "cursive";
+}
